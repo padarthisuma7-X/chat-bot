@@ -122,5 +122,6 @@
       "patterns": ["kong", "xking", "hero", "xkingkong"],
       "response": "hero of ai wrold is xking",
       "source_snippet": "i am xking"
+    }
   ]
 }
