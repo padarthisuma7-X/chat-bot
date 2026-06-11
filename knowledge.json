@@ -1,0 +1,117 @@
+{
+  "agent_metadata": {
+    "name": "Wikipedia AI History & Concepts Bot",
+    "version": "1.0.0",
+    "description": "A rule-based chatbot utilizing keyword-matching rules extracted from the Wikipedia Artificial Intelligence article."
+  },
+  "rules": [
+    {
+      "id": "definition_ai",
+      "category": "Core Definition",
+      "description": "Matches queries asking for the definition of Artificial Intelligence (AI).",
+      "keywords": ["what is ai", "define ai", "definition of ai", "artificial intelligence definition", "what is artificial intelligence"],
+      "patterns": ["what is (artificial intelligence|ai)", "define (artificial intelligence|ai)"],
+      "response": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making.",
+      "source_snippet": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence..."
+    },
+    {
+      "id": "history_founded",
+      "category": "History",
+      "description": "Matches queries about when and how AI was founded.",
+      "keywords": ["when", "founded", "history of ai", "who founded", "how did ai start", "academic discipline"],
+      "patterns": ["when.*founded", "history of (ai|artificial intelligence)", "how.*(started|founded)"],
+      "response": "Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism, followed by periods of disappointment and loss of funding known as 'AI winters'.",
+      "source_snippet": "Artificial intelligence was founded as an academic discipline in 1956, and the field went through multiple cycles of optimism..."
+    },
+    {
+      "id": "ai_winter",
+      "category": "History",
+      "description": "Explains what AI Winters are.",
+      "keywords": ["ai winter", "ai winters", "disappointment", "loss of funding"],
+      "patterns": ["ai winter", "loss of funding"],
+      "response": "An 'AI Winter' is a period of disappointment, reduced public interest, and loss of funding for artificial intelligence research, which historically followed cycles of over-optimism.",
+      "source_snippet": "...cycles of optimism throughout its history, followed by periods of disappointment and loss of funding, known as AI winters."
+    },
+    {
+      "id": "ai_goals",
+      "category": "Core Goals",
+      "description": "Matches queries about the primary goals or subproblems of AI research.",
+      "keywords": ["goals", "subproblems", "objectives", "aims of ai"],
+      "patterns": ["goals of (ai|artificial intelligence)", "what are the goals", "subproblems"],
+      "response": "The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics.",
+      "source_snippet": "The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception..."
+    },
+    {
+      "id": "reasoning_problem_solving",
+      "category": "Cognitive Capabilities",
+      "description": "Explains how AI models reasoning and problem-solving.",
+      "keywords": ["reasoning", "problem-solving", "combinatorial explosion", "chain of thought"],
+      "patterns": ["reasoning", "problem.*solving", "how.*solve.*problems"],
+      "response": "Early AI used step-by-step reasoning imitating human logic, but struggled with 'combinatorial explosion' (growing exponentially slower on large problems). In 2024, reasoning models emerged as a type of Large Language Model trained to generate intermediate 'chains-of-thought' for complex math and coding.",
+      "source_snippet": "Early researchers developed algorithms that imitated step-by-step reasoning... Many of these algorithms experience a 'combinatorial explosion'..."
+    },
+    {
+      "id": "knowledge_representation",
+      "category": "Cognitive Capabilities",
+      "description": "Details knowledge bases, ontologies, and representation struggles.",
+      "keywords": ["knowledge representation", "ontology", "ontologies", "knowledge base", "commonsense"],
+      "patterns": ["knowledge representation", "ontology", "knowledge base"],
+      "response": "Knowledge representation and engineering allow AI programs to answer questions intelligently using a 'knowledge base'. An 'ontology' is a set of objects, relations, and concepts in a domain. The main hurdles include the massive breadth of commonsense knowledge and acquiring sub-symbolic (non-verbalized) knowledge.",
+      "source_snippet": "An ontology represents knowledge as a set of concepts within a domain... Difficulties include the breadth of commonsense knowledge and its sub-symbolic form."
+    },
+    {
+      "id": "planning_decision_making",
+      "category": "Agent Behavior",
+      "description": "Defines AI agents, rational planning, and utility.",
+      "keywords": ["planning", "decision-making", "agent", "rational agent", "utility", "markov", "policy"],
+      "patterns": ["planning", "decision.*making", "agent", "utility", "markov"],
+      "response": "An agent is an entity that perceives and acts. A rational agent assigns values (utility) to situations to maximize expected utility. In classical planning, effects are certain. In the real world, agents deal with uncertainty using Markov decision processes (with state transitions, rewards, and policies) or game theory when interacting with other agents.",
+      "source_snippet": "An 'agent' is any entity that perceives and takes actions in the world... A rational agent has goals or preferences and takes actions to make them happen."
+    },
+    {
+      "id": "machine_learning",
+      "category": "Learning",
+      "description": "Provides definitions of supervised, unsupervised, and reinforcement learning.",
+      "keywords": ["machine learning", "ml", "supervised", "unsupervised", "reinforcement learning", "deep learning"],
+      "patterns": ["machine learning", "supervised learning", "unsupervised learning", "reinforcement learning"],
+      "response": "Machine learning focuses on programs that automatically improve. It features: Unsupervised learning (finding patterns in unlabeled data), Supervised learning (classification or regression using labeled answers), and Reinforcement learning (maximizing rewards/minimizing punishments). Deep learning uses biologically inspired artificial neural networks to solve these.",
+      "source_snippet": "Machine learning is the study of programs that can improve their performance automatically... includes supervised, unsupervised, and reinforcement learning."
+    },
+    {
+      "id": "natural_language_processing",
+      "category": "Communication",
+      "description": "Covers reading, writing, and language structures (NLP).",
+      "keywords": ["nlp", "natural language", "speech", "translation", "transformer", "gpt", "chomsky"],
+      "patterns": ["natural language", "nlp", "speech recognition", "translation", "gpt"],
+      "response": "Natural language processing (NLP) allows programs to read, write, and communicate in human languages. Modern NLP uses word embeddings, the transformer architecture (attention mechanisms), and generative pre-trained transformers (GPTs) which can achieve human-level scores on major examinations.",
+      "source_snippet": "Natural language processing (NLP) allows programs to read, write and communicate in human languages... Modern deep learning includes word embedding, transformers..."
+    },
+    {
+      "id": "perception",
+      "category": "Senses",
+      "description": "Deals with computer vision and sensing inputs.",
+      "keywords": ["perception", "computer vision", "sensors", "camera", "lidar", "sonar"],
+      "patterns": ["perception", "computer vision", "sensor", "camera", "object recognition"],
+      "response": "Machine perception uses sensors (cameras, microphones, active lidar, sonar, radar) to deduce aspects of the world. Computer vision is a key branch, enabling image classification, facial recognition, and object tracking.",
+      "source_snippet": "Machine perception is the ability to use input from sensors... to deduce aspects of the world. Computer vision is the ability to analyze visual input."
+    },
+    {
+      "id": "social_intelligence",
+      "category": "Interaction",
+      "description": "Affective computing and emotion simulation.",
+      "keywords": ["social intelligence", "affective computing", "emotion", "kismet", "sentiment analysis"],
+      "patterns": ["social intelligence", "affective computing", "emotion", "kismet"],
+      "response": "Affective computing designs systems that recognize, interpret, or simulate human feeling and mood (e.g., Kismet, a 1990s robotic head). Applications include conversational virtual assistants and multimodal sentiment analysis of videos.",
+      "source_snippet": "Affective computing is a field that comprises systems that recognize, interpret, process, or simulate human feeling, emotion, and mood."
+    },
+    {
+      "id": "general_intelligence",
+      "category": "Future / AGI",
+      "description": "What is artificial general intelligence.",
+      "keywords": ["agi", "artificial general intelligence", "human-level", "general intelligence"],
+      "patterns": ["agi", "general intelligence", "artificial general intelligence"],
+      "response": "Artificial General Intelligence (AGI) is hypothetical AI that can complete virtually any cognitive task at least as well as a human, with similar breadth and versatility.",
+      "source_snippet": "...create artificial general intelligence (AGI) – AI that can complete virtually any cognitive task at least as well as a human."
+    }
+  ]
+}
