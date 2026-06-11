@@ -112,7 +112,7 @@
       "patterns": ["agi", "general intelligence", "artificial general intelligence"],
       "response": "Artificial General Intelligence (AGI) is hypothetical AI that can complete virtually any cognitive task at least as well as a human, with similar breadth and versatility.",
       "source_snippet": "...create artificial general intelligence (AGI) – AI that can complete virtually any cognitive task at least as well as a human."
-    }
+    },
     {
     
       "id": "hero",
@@ -122,6 +122,6 @@
       "patterns": ["kong", "xking", "hero", "xkingkong"],
       "response": "hero of ai wrold is xking",
       "source_snippet": "i am xking"
-    }
+    },
   ]
 }
